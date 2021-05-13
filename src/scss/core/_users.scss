@@ -1,0 +1,96 @@
+.users {
+  .table-hover {
+    th {
+      line-height: 1em;
+    }
+
+    tbody tr {
+      &:hover {
+        color: #212120;
+        cursor: auto;
+      }
+    }
+  }
+
+  .avatar {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+
+    &-img {
+      width: 40px;
+      height: 40px;
+      overflow: hidden;
+      border-radius: 50em;
+    }
+
+    > img, .img-avatar, .img-circle {
+      max-width: 100%;
+      height: auto;
+    }
+
+    > img {
+      vertical-align: initial;
+    }
+
+    &-status {
+      position: absolute;
+      bottom: 0;
+      right: -10px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.user-profile {
+  padding: 0;
+}
+
+.user {
+  .display-4 {
+    margin-bottom: 1.5rem;
+  }
+
+  dd {
+    margin-bottom: 0;
+  }
+
+  dt {
+    font-weight: 600;
+  }
+
+  //.row {
+  //  margin-right: -10px;
+  //  margin-left: -15px;
+  //}
+
+  .separately {
+    margin-bottom: 1rem;
+  }
+
+  .kinsfolk {
+    cursor: pointer;
+  }
+
+  .avatar {
+    position: relative;
+    display: inline-block;
+    //width: 100%;
+    /*max-height: 150px;*/
+    overflow: hidden;
+
+    > img, .img-avatar {
+      max-width: 100%;
+      height: auto;
+    }
+
+    > img {
+      vertical-align: initial;
+    }
+  }
+}
+
+
+

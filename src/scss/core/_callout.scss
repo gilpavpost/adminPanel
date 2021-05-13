@@ -1,0 +1,101 @@
+.callout {
+  position: relative;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid $secondary;
+  border-radius: .25rem
+}
+
+.callout .chart-wrapper {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  float: right;
+  width: 50%
+}
+
+.callout-bordered {
+  border: 1px solid $secondary;
+  border-left-width: 4px
+}
+
+.callout code {
+  border-radius: .25rem
+}
+
+.callout h4 {
+  margin-top: 0;
+  margin-bottom: .5rem
+}
+
+.callout p:last-child {
+  margin-bottom: 0
+}
+
+.callout + .callout {
+  margin-top: -.25rem
+}
+
+.callout-primary {
+  border-left-color: $primary
+}
+
+.callout-primary h4 {
+  color: $primary
+}
+
+.callout-secondary {
+  border-left-color: $secondary
+}
+
+.callout-secondary h4 {
+  color: $secondary
+}
+
+.callout-success {
+  border-left-color: $success
+}
+
+.callout-success h4 {
+  color: $success
+}
+
+.callout-info {
+  border-left-color: $info
+}
+
+.callout-info h4 {
+  color: $info
+}
+
+.callout-warning {
+  border-left-color: $warning
+}
+
+.callout-warning h4 {
+  color: $warning
+}
+
+.callout-danger {
+  border-left-color: $danger
+}
+
+.callout-danger h4 {
+  color: $danger
+}
+
+.callout-light {
+  border-left-color: #f0f3f5
+}
+
+.callout-light h4 {
+  color: #f0f3f5
+}
+
+.callout-dark {
+  border-left-color: #2f353a
+}
+
+.callout-dark h4 {
+  color: #2f353a
+}

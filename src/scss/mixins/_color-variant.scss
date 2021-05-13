@@ -1,0 +1,11 @@
+@mixin color-variant($parent, $color) {
+  #{$parent} {
+    background-color: $color;
+    border-color: $color;
+  }
+  a#{$parent}:hover,
+  a#{$parent}:focus {
+    background-color: darken($color, 10%);
+    border-color: darken($color, 10%);
+  }
+}

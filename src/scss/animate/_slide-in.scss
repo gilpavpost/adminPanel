@@ -1,0 +1,44 @@
+@keyframes slideInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slideInLeft {
+  animation-name: slideInLeft;
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+}

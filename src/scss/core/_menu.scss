@@ -1,0 +1,81 @@
+.sidenav {
+  position: fixed;
+  width: 220px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding-bottom: 60px;
+  background-color: $theme-color;
+  border-color: $theme-color;
+  z-index: 999;
+  overflow-y: auto;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  transform: translateX(-105%);
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+
+  &.open {
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+  }
+
+  .logo {
+    min-height: 51px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .3);
+    margin: 0 10px;
+
+    a {
+      display: block;
+      padding: 14px 22px;
+      font-weight: 700;
+      text-align: center;
+
+      &:hover,
+      &:focus {
+        color: $link-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.app-sidenav {
+  width: 220px;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  bottom: 0 !important;
+  height: auto !important;
+  overflow-y: auto;
+  will-change: transform;
+  backface-visibility: hidden;
+
+  li {
+    > a {
+      display: block;
+      padding: 10px 21px;
+      color: #fff;
+      opacity: .7;
+      transition: opacity .15s ease-in;
+
+      &:hover,
+      &:focus {
+        color: #ffffff;
+        text-decoration: none;
+        opacity: 1;
+      }
+    }
+
+    &.active {
+      > a {
+        color: #ffffff;
+        text-decoration: none;
+        opacity: 1;
+      }
+    }
+  }
+}
+

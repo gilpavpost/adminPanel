@@ -1,0 +1,135 @@
+/*Left*/
+.modal-left {
+  .modal-dialog {
+    left: 0;
+  }
+
+  &.fade .modal-dialog {
+    transform: translate(-80%, 0);
+  }
+}
+
+/*Right*/
+.modal-right {
+  .modal-dialog {
+    right: 0;
+  }
+
+  &.fade .modal-dialog {
+    transform: translate(80%, 0);
+  }
+}
+
+.modal-left,
+.modal-right {
+  .modal-content {
+    height: 100%;
+    display: block;
+    border-radius: 0;
+    border: 0;
+    padding: 3rem 0;
+  }
+
+  .modal-body {
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .modal-header,
+  .modal-footer {
+    position: fixed;
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+
+  .modal-header {
+    top: 0;
+  }
+
+  .modal-footer {
+    padding-top: 20px;
+    bottom: 0;
+
+    .btn {
+      @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+    }
+
+    justify-content: flex-start;
+  }
+
+  .modal-dialog {
+    position: fixed;
+    margin: auto;
+    height: 100%;
+
+    @include media-breakpoint-down(sm) {
+      &.modal-sm {
+        width: 290px;
+      }
+    }
+
+
+    @include media-breakpoint-up(sm) {
+      width: 40%;
+      max-width: 80%;
+
+      &.modal-lg {
+        width: 80%;
+      }
+
+      &.modal-md {
+        width: 60%;
+      }
+
+      &.modal-sm {
+        width: 450px;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      &.modal-sm {
+        width: 450px;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      &.modal-sm {
+        width: 500px;
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      &.modal-sm {
+        width: 600px;
+      }
+    }
+
+
+  }
+
+  &.show .modal-dialog {
+    transform: translate(0, 0);
+  }
+
+  @include media-breakpoint-up(sm) {
+    .close {
+      float: none;
+      position: absolute;
+      left: -3.5rem;
+      color: #fff;
+      font-weight: normal;
+      font-size: 2rem;
+
+      &:not(:disabled):not(.disabled):hover {
+        color: #fff;
+        opacity: 1;
+      }
+    }
+  }
+
+  &.wrap {
+    .modal-content {
+      padding: 0;
+    }
+  }
+}

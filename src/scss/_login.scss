@@ -1,0 +1,39 @@
+.auth {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 100px 15px 15px 15px;
+
+  h1 {
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0 0 10px;
+    text-align: center;
+  }
+
+  .card-body {
+    padding: 40px 80px 40px;
+  }
+
+  .auth-image {
+    max-width: 370px;
+    padding: 30px 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 50px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding-top: 15px;
+
+    .auth-image {
+      max-width: 200px;
+      padding: 30px 0;
+    }
+
+    .card-body {
+      padding: 5px 20px 20px;
+    }
+  }
+}

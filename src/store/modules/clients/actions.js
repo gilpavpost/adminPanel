@@ -1,0 +1,8 @@
+export const FETCH_CLIENTS = 'FETCH_CLIENTS';
+export const LOAD_CLIENT = 'LOAD_CLIENT';
+export const CREATE_CLIENT = 'CREATE_CLIENT';
+export const UPDATE_CLIENT = 'UPDATE_CLIENT';
+export const DELETE_CLIENT = 'DELETE_CLIENT';
+export const CLIENT_FILTERS = 'CLIENT_FILTERS';
+export const CLIENT_BRANDS = 'CLIENT_BRANDS';
+export const FIND_CLIENT = 'FIND_CLIENT';

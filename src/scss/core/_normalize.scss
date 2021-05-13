@@ -1,0 +1,16 @@
+//
+// Normalize
+// --------------------------------------------------
+
+// Remove default outline.
+
+*,
+*:hover,
+*:focus,
+*:active {
+  outline: none !important
+}
+
+textarea {
+  resize:vertical;
+}

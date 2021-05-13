@@ -1,0 +1,74 @@
+{
+  "name": "my-project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-regular-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
+    "@tinymce/tinymce-vue": "^3.2.3",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.0-rc.24",
+    "core-js": "^2.6.5",
+    "lodash": "^4.17.14",
+    "moment": "^2.24.0",
+    "register-service-worker": "^1.6.2",
+    "vue": "^2.6.10",
+    "vue-html-to-paper": "^1.1.1",
+    "vue-i18n": "^8.11.2",
+    "vue-loading-overlay": "^3.2.0",
+    "vue-material": "^1.0.0-beta-11",
+    "vue-multiselect": "^2.1.6",
+    "vue-notification": "^1.3.16",
+    "vue-phone-number-input": "^0.2.7",
+    "vue-progressbar": "^0.7.5",
+    "vue-router": "^3.0.6",
+    "vue-sidebar-menu": "^3.12.0",
+    "vue-sweetalert2": "^2.0.5",
+    "vue-tables-2": "^1.4.70",
+    "vue2-datepicker": "^2.12.0",
+    "vuex": "^3.1.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-plugin-eslint": "^3.8.0",
+    "@vue/cli-service": "^3.8.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

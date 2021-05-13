@@ -1,0 +1,454 @@
+.action-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1.5rem 0 1.5rem 0;
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    margin: 0 1rem 0 1rem;
+    cursor: pointer;
+
+    .micon {
+      height: 2.2rem;
+    }
+
+    .title {
+      height: 2.7rem;
+      margin-top: 0.3rem;
+      display: flex;
+      align-items: center;
+      color: $theme-color_dark;
+    }
+
+    &:hover {
+      .title {
+        color: $theme-color-second_b_dark;
+      }
+    }
+  }
+}
+
+.item {
+  .micon {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: background-image 200ms linear;
+
+    &__close {
+      width: 1.5rem;
+      height: 1.5rem;
+      background-image: str-replace($close, "color", $theme-color_dark);
+    }
+    &__menu {
+      background-image: str-replace($menu, "color", $theme-color_dark);
+    }
+
+    &__factory {
+      background-image: str-replace($factory, "color", $theme-color_dark);
+    }
+
+    &__basket {
+      background-image: str-replace($basket, "color", $theme-color_dark);
+    }
+
+    &__storage {
+      background-image: str-replace($storage, "color", $theme-color_dark);
+    }
+
+    &__export {
+      background-image: str-replace($export, "color", $theme-color_dark);
+    }
+
+    &__mailing {
+      background-image: str-replace($mailing, "color", $theme-color_dark);
+    }
+
+    &__user {
+      background-image: str-replace($user, "color", $theme-color_dark);
+    }
+
+    &__users {
+      background-image: str-replace($users, "color", $theme-color_dark);
+    }
+
+    &__add-user {
+      background-image: str-replace($add-user, "color", $theme-color_dark);
+    }
+
+    &__search-user {
+      background-image: str-replace($search-user, "color", $theme-color_dark);
+    }
+
+    &__door {
+      background-image: str-replace($door, "color", $theme-color_dark);
+    }
+
+    &__door-directions {
+      background-image: str-replace(
+        $door-directions,
+        "color",
+        $theme-color_dark
+      );
+    }
+
+    &__door-leaf {
+      background-image: str-replace($door-leaf, "color", $theme-color_dark);
+    }
+
+    &__door-kind {
+      background-image: str-replace($door-kind, "color", $theme-color_dark);
+    }
+
+    &__threshold {
+      background-image: str-replace($threshold, "color", $theme-color_dark);
+    }
+
+    &__door-glass {
+      background-image: str-replace($door-glass, "color", $theme-color_dark);
+    }
+
+    &__door-part {
+      background-image: str-replace($door-part, "color", $theme-color_dark);
+    }
+  }
+
+  &:hover {
+    .micon {
+      &__close {
+        background-image: str-replace(
+          $close,
+          "color",
+          $theme-color-second_b_dark
+        );
+      }
+      &__menu {
+        background-image: str-replace(
+          $menu,
+          "color",
+          $theme-color-second_b_dark
+        );
+      }
+
+      &__factory {
+        background-image: str-replace(
+          $factory,
+          "color",
+          $theme-color-second_b_dark
+        );
+      }
+
+      &__storage {
+        background-image: str-replace(
+          $storage,
+          "color",
+          $theme-color-second_b_dark
+        );
+      }
+
+      &__basket {
+        background-image: str-replace(
+          $basket,
+          "color",
+          $theme-color-second_b_dark
+        );
+      }
+
+      &__export {
+        background-image: str-replace(
+          $export,
+          "color",
+          $theme-color-second_b_dark
+        );
+      }
+
+      &__mailing {
+        background-image: str-replace(
+          $mailing,
+          "color",
+          $theme-color-second_b_dark
+        );
+      }
+
+      &__user {
+        background-image: str-replace(
+          $user,
+          "color",
+          $theme-color-second_b_dark
+        );
+      }
+
+      &__users {
+        background-image: str-replace(
+          $users,
+          "color",
+          $theme-color-second_b_dark
+        );
+      }
+
+      &__add-user {
+        background-image: str-replace(
+          $add-user,
+          "color",
+          $theme-color-second_b_dark
+        );
+      }
+
+      &__search-user {
+        background-image: str-replace(
+          $search-user,
+          "color",
+          $theme-color-second_b_dark
+        );
+      }
+
+      &__door {
+        background-image: str-replace(
+          $door,
+          "color",
+          $theme-color-second_b_dark
+        );
+      }
+
+      &__door-directions {
+        background-image: str-replace(
+          $door-directions,
+          "color",
+          $theme-color-second_b_dark
+        );
+      }
+
+      &__door-leaf {
+        background-image: str-replace(
+          $door-leaf,
+          "color",
+          $theme-color-second_b_dark
+        );
+      }
+
+      &__door-kind {
+        background-image: str-replace(
+          $door-kind,
+          "color",
+          $theme-color-second_b_dark
+        );
+      }
+
+      &__threshold {
+        background-image: str-replace(
+          $threshold,
+          "color",
+          $theme-color-second_b_dark
+        );
+      }
+
+      &__door-glass {
+        background-image: str-replace(
+          $door-glass,
+          "color",
+          $theme-color-second_b_dark
+        );
+      }
+
+      &__door-part {
+        background-image: str-replace(
+          $door-part,
+          "color",
+          $theme-color-second_b_dark
+        );
+      }
+    }
+  }
+}
+
+.micon {
+  display: block;
+  width: 1.7rem;
+  height: 1.7rem;
+  transition: background-image 200ms linear;
+
+  &__menu {
+    background-image: str-replace($menu, "color", $gray-600);
+
+    &:hover {
+      background-image: str-replace($menu, "color", $gray-700);
+    }
+  }
+
+  &__settings {
+    background-image: str-replace($settings, "color", $gray-600);
+
+    &:hover {
+      background-image: str-replace($settings, "color", $gray-700);
+    }
+  }
+
+  &__delete {
+    background-image: str-replace($delete, "color", $gray-600);
+
+    &:hover {
+      background-image: str-replace($delete, "color", $gray-700);
+    }
+  }
+
+  &__locate {
+    background-image: str-replace($locate, "color", $gray-600);
+
+    &:hover {
+      background-image: str-replace($locate, "color", $gray-700);
+    }
+  }
+
+  &__ruler {
+    background-image: str-replace($ruler, "color", $gray-600);
+
+    &:hover {
+      background-image: str-replace($ruler, "color", $gray-700);
+    }
+  }
+
+  &__mpf {
+    background-image: str-replace($mpf, "color", $gray-600);
+
+    &:hover {
+      background-image: str-replace($mpf, "color", $gray-700);
+    }
+  }
+
+  &__storage {
+    background-image: str-replace($storage, "color", $gray-600);
+
+    &:hover {
+      background-image: str-replace($storage, "color", $gray-700);
+    }
+  }
+
+  &__mpc {
+    background-image: str-replace($mpc, "color", $gray-600);
+
+    &:hover {
+      background-image: str-replace($mpc, "color", $gray-700);
+    }
+  }
+
+  &__cut {
+    background-image: str-replace($cut, "color", $gray-600);
+
+    &:hover {
+      background-image: str-replace($cut, "color", $gray-700);
+    }
+  }
+
+  &__truck {
+    background-image: str-replace($truck, "color", $gray-600);
+
+    &:hover {
+      background-image: str-replace($truck, "color", $gray-700);
+    }
+  }
+
+  &__builder {
+    background-image: str-replace($builder, "color", $gray-600);
+
+    &:hover {
+      background-image: str-replace($builder, "color", $gray-700);
+    }
+  }
+
+  &__smile {
+    background-image: str-replace($smile, "color", $gray-600);
+
+    &:hover {
+      background-image: str-replace($smile, "color", $gray-700);
+    }
+  }
+
+  &__dealer {
+    background-image: str-replace($dealer, "color", $gray-600);
+
+    &:hover {
+      background-image: str-replace($dealer, "color", $gray-700);
+    }
+  }
+
+  &__chart {
+    background-image: str-replace($chart, "color", $gray-600);
+
+    &:hover {
+      background-image: str-replace($chart, "color", $gray-700);
+    }
+  }
+
+  &__card-plus {
+    background-image: str-replace($card-plus, "color", $gray-600);
+
+    &:hover {
+      background-image: str-replace($card-plus, "color", $gray-700);
+    }
+  }
+
+  &__list-plus {
+    background-image: str-replace($list-plus, "color", $gray-600);
+
+    &:hover {
+      background-image: str-replace($list-plus, "color", $gray-700);
+    }
+  }
+
+  &__plus {
+    background-image: str-replace($plus, "color", $gray-600);
+
+    &:hover {
+      background-image: str-replace($plus, "color", $gray-700);
+    }
+  }
+
+  &__funnel {
+    background-image: str-replace($funnel, "color", $gray-600);
+
+    &:hover {
+      background-image: str-replace($funnel, "color", $gray-700);
+    }
+  }
+
+  &__arrows {
+    background-image: str-replace($arrows, "color", $gray-600);
+
+    &:hover {
+      background-image: str-replace($arrows, "color", $gray-700);
+    }
+  }
+
+  &__chevronfalse {
+    background-image: str-replace($chevron-right, "color", $gray-600);
+    &:hover {
+      background-image: str-replace($chevron-right, "color", $gray-700);
+    }
+  }
+  &__chevrontrue {
+    background-image: str-replace($chevron-right, "color", $gray-600);
+    transform: rotate(90deg);
+
+    &:hover {
+      background-image: str-replace($chevron-right, "color", $gray-700);
+    }
+  }
+
+  // &:hover {
+  //   .micon {
+  //     &__menu {
+  //       background-image: str-replace($menu, "color", $gray-400);
+  //     }
+
+  //     &__settings {
+  //       background-image: str-replace($settings, "color", $gray-400);
+  //     }
+  //   }
+  // }
+}

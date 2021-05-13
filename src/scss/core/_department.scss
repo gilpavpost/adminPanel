@@ -1,0 +1,264 @@
+.business {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  // border: 1px solid #000;
+}
+
+.department {
+  border: 1px solid $gray-300;
+  border-radius: 0.4rem;
+  padding: .5rem;
+  margin: 0 0 .5rem .5rem;
+  height: 270px;
+  max-height: 270px;
+
+  @include break-up(xs) {
+    width: 100%;
+  }
+
+  @include break-up(sm) {
+    width: 510px;
+  }
+
+  @include break-up(md) {
+    width: 343px;
+  }
+
+  @include break-up(lg) {
+    width: 455px;
+  }
+
+  @include break-up(xl) {
+    width: 470px;
+  }
+
+  @include break-up(2xl) {
+    width: 370px;
+  }
+
+  @include break-up(3xl) {
+    width: 325px;
+  }
+
+  @include break-up(4xl) {
+    width: 375px;
+  }
+
+  @include break-up(5xl) {
+    width: 343px;
+  }
+
+  &-users {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    font-size: .8rem;
+    height: 50px;
+    overflow-y: scroll;
+
+
+    &-user {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      color: $gray-600;
+      cursor: pointer;
+
+      .status {
+        width: .5rem;
+        height: .5rem;
+        border-radius: 50%;
+        background-color: $red;
+        margin-right: .5rem;
+      }
+
+      &.active {
+        .status {
+          width: .5rem;
+          height: .5rem;
+          border-radius: 50%;
+          background-color: $green;
+          margin-right: .5rem;
+        }
+      }
+    }
+  }
+
+  &-stats {
+    font-size: .8rem;
+    margin: 0 0 .8rem 0;
+    display: flex;
+    justify-content: space-between;
+
+    &-details {
+      display: flex;
+      flex-direction: row;
+      text-decoration: underline;
+      color: $primary;
+
+      .micon {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-left: .5rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-title {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+
+    .micon {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin: 0 .5rem 0 1rem;
+    }
+  }
+
+  &-body {}
+
+  &-action {}
+
+  &-section {
+
+    &-header {
+      text-align: center;
+
+      .item {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: .8rem;
+        background-color: $gray-200;
+
+        &-move {
+          width: 1.2rem;
+          height: 1.2rem;
+        }
+
+        &-info {
+          display: flex;
+
+          .date {
+            margin-right: .3rem;
+            width: 65px;
+          }
+
+          .num {
+            width: 45px;
+          }
+
+          .status {
+            display: block;
+            width: 125px;
+            margin-right: .5rem;
+            text-align: center;
+          }
+        }
+
+        .price {
+          display: flex;
+          flex-direction: column;
+          width: 65px;
+        }
+      }
+    }
+
+    &-body {
+      height: 95px;
+      overflow-y: scroll;
+
+      .item {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: .8rem;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $gray-300;
+
+          .status {
+            background-color: $gray-300;
+            color: $gray-700;
+          }
+        }
+
+        &-move {
+          width: 1.3rem;
+          height: 1.3rem;
+
+          .micon {
+            width: 1.3rem;
+            height: 1.3rem;
+            cursor: pointer;
+          }
+
+          &:hover {
+            background-color: $warning;
+          }
+        }
+
+        &-info {
+          display: flex;
+
+          .date {
+            color: $gray-700;
+            margin-right: .3rem;
+            width: 65px;
+          }
+
+          .num {
+            font-weight: 600;
+            width: 45px;
+            text-align: center;
+          }
+
+          .status {
+            display: block;
+            width: 125px;
+            margin-right: .5rem;
+            text-align: center;
+            background-color: $green;
+            color: $white;
+          }
+        }
+
+
+        .price {
+          color: $red;
+          display: flex;
+          flex-direction: column;
+          width: 65px;
+          text-align: right;
+          padding: 0 .2rem;
+
+          &-status {
+            height: 3px;
+            width: 100%;
+            background-color: $white;
+
+            &.paid {
+              background-color: $green;
+            }
+
+            &.advance-payment {
+              background-color: $red;
+            }
+
+            &.prepay {
+              background-color: $orange;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

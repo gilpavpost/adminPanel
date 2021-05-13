@@ -1,0 +1,211 @@
+$font-family-open-sans: "Montserrat",
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji" !default;
+$font-family-base: $font-family-open-sans;
+
+// $theme-color: #212120;
+$body-bg: #ffffff;
+
+/* Таблицы стилей Sass */
+/* Адрес цветовой схемы: https://colorscheme.ru/#3re1Ts8FYw00w */
+
+
+/* HEX коды */
+
+// $color-primary-0: #3399cc;	/* Основной Цвет */
+// $color-primary-1: #336699;
+// $color-primary-2: #006666;
+// $color-primary-3: #3399cc;
+// $color-primary-4: #3399cc;
+
+// $color-secondary-a-0: #3333cc;	/* Вторичный Цвет A */
+// $color-secondary-a-1: #336699;
+// $color-secondary-a-2: #003399;
+// $color-secondary-a-3: #060607;
+// $color-secondary-a-4: #3333cc;
+
+// $color-secondary-b-0: #00cc66;	/* Вторичный Цвет B */
+// $color-secondary-b-1: #339966;
+// $color-secondary-b-2: #009933;
+// $color-secondary-b-3: #33cc66;
+// $color-secondary-b-4: #33cc66;
+
+// $color-complement-0: #ff9933;	/* Дополнительный Цвет */
+// $color-complement-1: #cc9933;
+// $color-complement-2: #996600;
+// $color-complement-3: #ff9933;
+// $color-complement-4: #ff9933;
+
+$product-color-green: #339966;
+$product-color-gray: #006666;
+$product-color-blue: #336699;
+$product-color-blueDark: #060607;
+$product-color-yellow: #ff9933;
+
+$theme-color: #3399CC;
+$theme-color_dark: #336699;
+$theme-color_light: #3399cc;
+$theme-color-shadow: #006666;
+$theme-color-second_b: #3333cc;
+$theme-color-second_b_dark: #003399;
+$theme-color-second_b_light: #336699;
+$theme-color-second: #00cc66;
+$theme-color-second_dark: #009933;
+$theme-color-second_light: #33cc66;
+$theme-color-third: #ff9933;
+$theme-color-third_dark: #996600;
+$theme-color-third_light: #cc9933;
+
+$input-btn-focus-width: .1rem;
+$btn-focus-width: 0;
+
+$input-focus-width: 0;
+
+$badge-font-weight: 400;
+
+$custom-control-indicator-size: 1.2rem;
+
+$navbar-padding-x: 1rem;
+$navbar-padding-y: .2rem;
+
+$custom-checkbox-indicator-border-radius: .25rem;
+$custom-control-indicator-checked-bg: $product-color-green;
+$custom-control-indicator-checked-disabled-bg: rgba($product-color-green, .5);
+
+$tooltip-bg: #06446D;
+
+// Color system
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$grays: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge(("100": $gray-100,
+                "200": $gray-200,
+                "300": $gray-300,
+                "400": $gray-400,
+                "500": $gray-500,
+                "600": $gray-600,
+                "700": $gray-700,
+                "800": $gray-800,
+                "900": $gray-900),
+        $grays);
+
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(("blue": $blue,
+                "indigo": $indigo,
+                "purple": $purple,
+                "pink": $pink,
+                "red": $red,
+                "orange": $orange,
+                "yellow": $yellow,
+                "green": $green,
+                "teal": $teal,
+                "cyan": $cyan,
+                "white": $white,
+                "gray": $gray-600,
+                "gray-dark": $gray-800),
+        $colors);
+
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+$product_color_1:$theme-color !default;
+$product_color_2:$product-color-gray !default;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(("primary": $primary,
+                "secondary": $secondary,
+                "success": $success,
+                "info": $info,
+                "warning": $warning,
+                "danger": $danger,
+                "light": $light,
+                "dark": $dark,
+                "p-blue":$product_color_1,
+                "p-yellow":$product_color_2,
+        ),
+        $theme-colors);
+
+$link-color: $secondary !default;
+
+// Set a specific jump point for requesting color jumps
+$theme-color-interval: 8% !default;
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold: 150 !default;
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+$yiq-text-dark: $gray-900 !default;
+$yiq-text-light: $white !default;
+
+
+
+
+$grid-breakpoints: (xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1300px);
+
+$container-max-widths: (sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1280px);
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+$grid-breakpoints-ap: (xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1024px,
+        2xl: 1200px,
+        3xl: 1400px,
+        4xl: 1600px,
+        5xl: 1800px,
+) !default;
+
+$min_b: 320px;
+$max_b: 1760px;
+$container: minmax($min_b, $max_b);
+$container_padding: 20px;

@@ -1,0 +1,38 @@
+.menuAccardion {
+  .container {
+    max-width: 400px;
+    margin: 25px auto;
+  }
+  .menu_title {
+    font-size: 20px;
+    margin-left: 20px;
+    color: #65bbe8 !important;
+  }
+  .menu_title:hover {
+    color: #55a9d6 !important;
+  }
+  a {
+    display: block;
+    cursor: pointer;
+  }
+  ul {
+    list-style: none;
+  }
+  li {
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  li:hover {
+    color: #339966;
+  }
+}
+.closeModalWindow {
+  background-color: white;
+  opacity: 0.6;
+  position:absolute;
+  z-index: 3000;
+  left: 43.5rem;
+  top: 1rem;
+  transition-duration: 1.5s;
+}

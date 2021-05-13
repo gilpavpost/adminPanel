@@ -1,0 +1,284 @@
+html, body {
+  font-size: 14px;
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+}
+
+.app-page {
+  flex: 1 0 auto;
+  // padding: 1rem
+  @include break-up(xs) {
+    padding: 0
+  }
+
+  @include break-up(lg) {
+    padding-bottom: 85px;
+  }
+}
+.wrapper {
+  display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.wrapper-content {
+  // padding: 20px 0;
+}
+
+.container-ap {
+  min-width: $min_b;
+  padding: $container_padding;
+  margin: 0 auto;
+
+  @include break-up(xs) {
+    max-width: $max_b;
+  }
+
+  @include break-up(sm) {
+    width: map-get($grid-breakpoints-ap, sm)-$container_padding*2;
+  }
+
+  @include break-up(md) {
+    width: map-get($grid-breakpoints-ap, md)-$container_padding*2;
+  }
+
+  @include break-up(lg) {
+    width: map-get($grid-breakpoints-ap, lg)-$container_padding*2;
+  }
+
+  @include break-up(xl) {
+    width: map-get($grid-breakpoints-ap, xl)-$container_padding*2;
+  }
+
+  @include break-up(2xl) {
+    width: map-get($grid-breakpoints-ap, 2xl)-$container_padding*2;
+  }
+
+  @include break-up(3xl) {
+    width: map-get($grid-breakpoints-ap, 3xl)-$container_padding*2;
+  }
+
+  @include break-up(4xl) {
+    width: map-get($grid-breakpoints-ap, 4xl)-$container_padding*2;
+  }
+
+  @include break-up(5xl) {
+    width: $max_b;
+  }
+}
+
+.row-ap {
+  margin-left: -$container_padding;
+  margin-right: -$container_padding;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-form {
+  padding: 10px 0 20px;
+}
+
+.table-hover {
+  tbody tr {
+    @include hover {
+      color: $theme-color;
+      cursor: pointer;
+    }
+  }
+}
+
+.app-main-layout {
+  position: relative;
+  min-height: 100vh
+}
+
+.logo {
+  .brand {
+    color: $theme-color;
+    font-size: 1.7rem;
+
+    span {
+      color: $theme-color-second_light;
+    }
+  }
+}
+
+.card {
+  flex-grow: 1;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 0.5rem;
+
+  .users-list {
+    width: 400px
+  }
+
+  &.recipients {
+    .details {
+      height: auto;
+      max-height: 14rem;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    .row {
+      &.list {
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.075);
+        }
+      }
+    }
+  }
+
+  &.clients {
+    .details {
+      height: auto;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    .row {
+      &.list {
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.075);
+        }
+      }
+    }
+  }
+
+  .actions {
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .avatar {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50em;
+    overflow: hidden;
+    margin-top: 5px;
+
+    >img,
+    .img-avatar,
+    .img-circle {
+      max-width: 100%;
+      height: auto;
+    }
+
+    >img {
+      vertical-align: initial;
+    }
+  }
+
+  .card-title {
+    position: absolute;
+    padding: 2px;
+    top: -1rem;
+    left: 30px;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: 1px solid #f8f9fa00;
+    border-radius: 0.25rem;
+    background: #FFF;
+  }
+
+  .card-subtitle {
+    position: absolute;
+    padding: 2px;
+    top: -0.5rem;
+    right: 50px;
+    color: $text-muted;
+    font-size: 0.9rem;
+    border: 1px solid #f8f9fa00;
+    border-radius: 0.25rem;
+    background: #FFF;
+    cursor: pointer;
+  }
+}
+
+dd,
+dl {
+  margin-bottom: 0;
+}
+
+.orders {
+  &-view {
+    .funnel {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}
+
+.model,
+.orders-view {
+  .display-4 {
+    margin-bottom: 1.5rem;
+  }
+
+  .sum {
+    text-align: center;
+  }
+
+  .price {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+
+    .card {
+      width: 100%;
+
+      &-body {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  dd,
+  dl {
+    margin-bottom: 0;
+  }
+
+  dt {
+    font-weight: 600;
+  }
+
+  .row {
+    margin-right: -10px;
+    margin-left: -15px;
+  }
+
+  .separately {
+    margin-bottom: 1rem;
+  }
+
+  .kinsfolk {
+    cursor: pointer;
+  }
+
+  .avatar {
+    position: relative;
+    display: inline-block;
+    //width: 100%;
+    /*max-height: 150px;*/
+    overflow: hidden;
+
+    >img,
+    .img-avatar {
+      max-width: 100%;
+      height: auto;
+    }
+
+    >img {
+      vertical-align: initial;
+    }
+  }
+}

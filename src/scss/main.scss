@@ -1,0 +1,41 @@
+//@import "bourbon";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700");
+
+
+// Variables
+@import 'core/variables';
+@import 'media';
+@import "icons";
+
+// Base Libs
+@import "core/bootstrap";
+
+// Animate plugin styles
+@import "animate/base";
+@import "animate/fade-in";
+@import "animate/fade-out";
+
+//Mixin files
+@import 'mixins/color-variant';
+
+// Core Styles
+@import 'core/base';
+@import 'core/navbar';
+@import 'core/department';
+@import 'core/users';
+@import 'core/action-menu';
+@import 'core/tables';
+@import 'core/normalize';
+@import 'core/fileinput';
+@import 'core/scrollbars';
+@import 'core/modals';
+@import 'core/multiselect';
+@import 'core/menu';
+@import 'core/callout';
+@import 'core/sidebar/vue-sidebar-menu';
+@import 'side-menu';
+// Css for different pages
+@import "login";
+@import "footer";
+
+
